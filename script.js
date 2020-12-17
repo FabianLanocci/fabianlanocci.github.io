@@ -20,3 +20,9 @@ if(window.location.hash){
         document.getElementById(link-home) = language.es.link1nav;
     }
 }
+
+for(i=0; i<=dataReload.length(); i++){
+    dataReload[i].onclick = function(){
+        location.reload(true);
+    }
+}
