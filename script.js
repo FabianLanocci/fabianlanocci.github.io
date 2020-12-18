@@ -5,24 +5,24 @@ var language = {
         link1nav: "Home",
         link2nav: "About me",
         link3nav: "Portfolio",
-        link4nav: "Contact me"
+        link4nav: "Contact me",
     },
     es: {
         link1nav: "Inicio",
         link2nav: "Sobre mi",
         link3nav: "Portafolio",
-        link4nav: "Contáctame"
+        link4nav: "Contáctame",
     }
 };
 
 if(window.location.hash){
-    if(windows.location.hash === "#es"){
-        document.getElementById(link-home) = language.es.link1nav;
+    if(window.location.hash === "#es"){
+        document.getElementById(link-home).textContent = language.es.link1nav;
     }
 }
 
 for(i=0; i<=dataReload.length(); i++){
     dataReload[i].onclick = function(){
-        location.reload(true);
-    }
+        location.reload();
+    };
 }
