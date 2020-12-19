@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="canonical" href="https://fabianlanocci.github.io/en">
         <title>Fabian Lanocci - portfolio</title>
-        
-        <!--script type="text/javascript" src="script.js"></script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/languages.js"></script>
     </head>
 
     <body>
         <!-- Navbar -->
         <nav id="navbar">
-            <ul class="languages-list">
-                <li class="languages-list-link"><a href="#es" class="link">ESP</a></li>
-                <li class="languages-list-link"><a href="#eng" class="link">ENG</a></li>
-            </ul>
+            <select id="language_select" onchange="loadsLanguage(this.value)"></select>
             <ul class="navbar-list">
-                <li class="navbar-list-link"><a href="#" id="link-home">Home</a></li>
-                <li class="navbar-list-link"><a href="#" class="link-about">About me</a></li>
-                <li class="navbar-list-link"><a href="#" class="link-portfolio">Portfolio</a></li>
-                <li class="navbar-list-link"><a href="#" class="link-contact">Contact me</a></li>
+                <li class="navbar-list-link"><a href="#" class="navlink"><span class="lang-link-home"></span></a></li>
+                <li class="navbar-list-link"><a href="#" class="navlink"><span class="lang-link-about"></span></a></li>
+                <li class="navbar-list-link"><a href="#" class="navlink"><span class="lang-link-portfolio"></span></a></li>
+                <li class="navbar-list-link"><a href="#" class="navlink"><span class="lang-link-contact"></span></a></li>
             </ul>
         </nav>
         <!-- End of navbar -->
 
         <!-- Header -->
-        <header>
+        <header id ="header">
 
         </header>
         <!-- End of header -->
@@ -45,35 +41,4 @@
         <!-- End of main content -->
         
     </body>
-<script>
-        var dataReload = document.querySelectorAll("[data-reload]");
-
-    var language = {
-        en: {
-            link1nav: "Home",
-            link2nav: "About me",
-            link3nav: "Portfolio",
-            link4nav: "Contact me",
-        },
-        es: {
-            link1nav: "Inicio",
-            link2nav: "Sobre mi",
-            link3nav: "Portafolio",
-            link4nav: "Contáctame",
-        }
-    };
-
-    if(window.location.hash){
-        if(window.location.hash === "#es"){
-            document.getElementById("link-home").textContent = language.es.link1nav;
-        }
-    }
-
-    for(i=0; i <= dataReload.length(); i++){
-        dataReload[i].onclick = function(){
-            location.reload();
-        };
-    }
-</script>
-
 </html>
