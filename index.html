@@ -4,6 +4,8 @@
         <title>Fabian Lanocci - portfolio</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="/languages.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/c3b741a5e3.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -11,29 +13,58 @@
         <nav id="navbar">
             <select id="language_select" onchange="loadsLanguage(this.value)"></select>
             <ul class="navbar-list">
-                <li class="navbar-list-link"><a href="#" class="navlink"><span class="lang-link-home"></span></a></li>
-                <li class="navbar-list-link"><a href="#" class="navlink"><span class="lang-link-about"></span></a></li>
-                <li class="navbar-list-link"><a href="#" class="navlink"><span class="lang-link-portfolio"></span></a></li>
-                <li class="navbar-list-link"><a href="#" class="navlink"><span class="lang-link-contact"></span></a></li>
+                <li class="navbar-list-link"><a href="#header" class="navlink"><span class="lang-home"></span></a></li>
+                <li class="navbar-list-link"><a href="#aboutMe" class="navlink"><span class="lang-about"></span></a></li>
+                <li class="navbar-list-link"><a href="#portfolio" class="navlink"><span class="lang-portfolio"></span></a></li>
+                <li class="navbar-list-link"><a href="#contact" class="navlink"><span class="lang-contact"></span></a></li>
             </ul>
         </nav>
         <!-- End of navbar -->
 
         <!-- Header -->
         <header id ="header">
-
+            <img
+                src=""
+                alt=""
+                id=""
+            >
+            <h1 id="header-heading">Fabian Lanocci</h1>
+            <h2 id="header-sub-heading"><span class="lang-sub-heading"></span></h2>
         </header>
         <!-- End of header -->
         
         <!-- Main content -->
         <div class="main-wrapper">
             <div class="main-content">
+                <div class="aboutMe">
+                    <h2 id="aboutMe-heading"><span class="lang-about"></span></h2>
+                    <p class="aboutMe-text"><span class="lang-about-description1"></span><div><span class="lang-about-description2"></span></div></p>
+                    <h3 id="stack-heading"><span class="lang-stack-heading"></span></h3>
+                    <div class="container-stack">
+                        <div class="container-html"><img src="res/icons/html5.png" alt="HTML5" class="stack-icon"></div>
+                        <div class="container-css"><img src="res/icons/css-3.png" alt="CSS3" class="stack-icon"></div>
+                        <div class="container-js"><img src="res/icons/javascript.png" alt="Javascript" class="stack-icon"></div>
+                        <div class="container-visual"><img src="res/icons/visual-studio.png" alt="Visual Studio" class="stack-icon"></div>
+                        <div class="container-java"><img src="res/icons/java.png" alt="Java" class="stack-icon"></div>
+                        <div class="container-git"><img src="res/icons/git.png" alt="Git" class="stack-icon"></div>
+                        <div class="container-mysql"><img src="res/icons/mysql.png" alt="MySql" class="stack-icon"></div>
+                        <div class="container-php"><img src="res/icons/php.png" alt="PHP" class="stack-icon"></div>
+                        <div class="container-codeign"><img src="res/icons/codeigniter.png" alt="CodeIgniter" class="stack-icon"></div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <h2 id="portfolio-heading"><span class="lang-portfolio"></span></h2>
 
+                </div>
+                <div class="contact">
+                    <h2 id="contact-heading"><span class="lang-contact"></span></h2>
+
+                </div>
             </div>
 
             <!-- Footer -->
             <footer class="footer">
-
+                
             </footer>
             <!-- End of footer -->
 
