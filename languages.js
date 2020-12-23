@@ -64,3 +64,7 @@ var LanguageList = {
       document.getElementById("curriculum-link").href ="https://drive.google.com/file/d/18lK6V6QVS5fvvU8f4Sp9pqlCkK5-izOp/view?usp=sharing";
     }
   }
+
+  // Functionality to the scroll to top button
+ 
+
