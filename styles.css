@@ -79,6 +79,7 @@
 /* Footer ---------------*/
 /* End of footer --------*/
 
+/* Scroll to top button */
 #scrollToTop {
   position: fixed;
   right: 10px;
@@ -97,3 +98,4 @@
 #scrollToTop:active {
   background: grey;
 }
+/* End of scroll to top button */
