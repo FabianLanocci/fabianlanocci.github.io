@@ -1,3 +1,36 @@
+/* General styles ------*/
+/* End of general styles*/
+
+/* Navbar --------------*/
+#navbar {
+}
+#language_select {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.navbar-list-link {
+  padding: 0.5rem;
+}
+/* End of navbar -------*/
+
+/* Main content --------*/
+.main-wrapper {
+  padding: 5rem;
+}
+/* End of main content*/
+
+/* Header --------------*/
+/* End of header -------*/
+
+/* About me ------------*/
 .container-stack {
   padding: 5rem;
   display: grid;
@@ -10,3 +43,38 @@
   height: 100px;
   width: 100px;
 }
+/* End of about me ------*/
+
+/* Portfolio ------------*/
+/* End of portfolio -----*/
+
+/* Contact --------------*/
+.contact {
+  padding: 1rem;
+}
+.contact-heading {
+  /*color: white;*/
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+}
+.contact-information {
+  font-weight: 600;
+}
+.social-networks {
+  padding: 2.5rem;
+}
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-bottom: 3rem;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+}
+/* End of contact -------*/
+
+/* Footer ---------------*/
+/* End of footer --------*/
