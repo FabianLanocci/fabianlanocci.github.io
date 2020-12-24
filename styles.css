@@ -71,6 +71,43 @@ nav {
 /* End of main content*/
 
 /* Header --------------*/
+#particle-js {
+  height: 100%;
+  background: #8d8c8c;
+}
+#header {
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 20vh;
+  width: 100%;
+  height: 80vh;
+  color: #000000;
+}
+#header-heading {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+  background: white;
+  animation: text 3s 1;
+}
+#header-sub-heading {
+  font-size: 30px;
+}
+
+@keyframes text {
+  0% {
+    color: white;
+    letter-spacing: 40px;
+    margin-bottom: -40px;
+  }
+  100% {
+    letter-spacing: 6px;
+    margin-bottom: 40px;
+  }
+}
 /* End of header -------*/
 
 /* About me ------------*/
