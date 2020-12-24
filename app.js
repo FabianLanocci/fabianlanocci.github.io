@@ -78,12 +78,7 @@ var LanguageList = {
       });
   });
 
-  /*links.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-  });*/
-
   // Navbar functionality when scrolling
-
   window.addEventListener("scroll", function() {
     if(window.pageYOffset > 0){
       navbar.classList.add("bg-black");
