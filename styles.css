@@ -133,6 +133,7 @@ nav {
 
 /* Media queries --------------*/
 @media screen and (max-width: 768px) {
+  /* Nav media queries */
   .navbar-list {
     position: fixed;
     background: #333333;
@@ -184,6 +185,7 @@ nav {
     transform: translate(-5%, -50%);
     z-index: 10;
   }
+  /* End of nav media queries*/
 
   .main-wrapper {
     padding: 1.5rem;

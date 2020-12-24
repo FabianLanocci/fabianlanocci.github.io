@@ -69,26 +69,34 @@ var LanguageList = {
   const hamburger = document.getElementById("hamburguer");
   const navLinks = document.getElementById("navbar-list");
   const links = document.getElementsByClassName(".navlink");
+  const navbar = document.getElementById("navbar");
 
   hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
+      navLinks.classList.toggle("open");
+      links.forEach(link => {
       link.classList.toggle("fade");
-    });
+      });
   });
+
+  /*links.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });*/
 
   // Navbar functionality when scrolling
 
   window.addEventListener("scroll", function() {
-    const navbar = document.getElementById("navbar");
-
     if(window.pageYOffset > 0){
       navbar.classList.add("bg-black");
       navbar.classList.add("text-white");
     } else{
       navbar.classList.remove("bg-black");
       navbar.classList.remove("text-white");
+      if(window.innerWidth < 768 ){
+        navbar.classList.add("text-white");
+      }
     }
   });
+
+
  
 
