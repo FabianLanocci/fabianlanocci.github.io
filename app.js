@@ -51,7 +51,7 @@ var LanguageList = {
   }
   
   function loadsLanguage(lang){
-    /*fills all the span tags with class=lang pattern*/ 
+    // Fills all the span tags with class=lang pattern
     $('span[class^="lang"]').each(function(){
       var LangVar = (this.className).replace('lang-','');
       var Text = window["WORDS_"+lang][LangVar];
@@ -65,6 +65,30 @@ var LanguageList = {
     }
   }
 
-  // Functionality to the scroll to top button
+  // Hamburguer functionality
+  const hamburger = document.getElementById("hamburguer");
+  const navLinks = document.getElementById("navbar-list");
+  const links = document.getElementsByClassName(".navlink");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+      link.classList.toggle("fade");
+    });
+  });
+
+  // Navbar functionality when scrolling
+
+  window.addEventListener("scroll", function() {
+    const navbar = document.getElementById("navbar");
+
+    if(window.pageYOffset > 0){
+      navbar.classList.add("bg-black");
+      navbar.classList.add("text-white");
+    } else{
+      navbar.classList.remove("bg-black");
+      navbar.classList.remove("text-white");
+    }
+  });
  
 

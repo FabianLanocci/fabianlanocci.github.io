@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Fabian Lanocci - portfolio</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/languages.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Fabian Lanocci - portfolio</title>
     </head>
 
     <body>
         <!-- Navbar -->
         <nav id="navbar">
+            <div class="hamburguer" id="hamburguer">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <select id="language_select" onchange="loadsLanguage(this.value)"></select>
-            <ul class="navbar-list">
-                <li class="navbar-list-link"><a href="#header" class="navlink"><span class="lang-home"></span></a></li>
-                <li class="navbar-list-link"><a href="#aboutMe" class="navlink"><span class="lang-about"></span></a></li>
-                <li class="navbar-list-link"><a href="#portfolio" class="navlink"><span class="lang-portfolio"></span></a></li>
-                <li class="navbar-list-link"><a href="#contact" class="navlink"><span class="lang-contact"></span></a></li>
+            <ul class="navbar-list" id="navbar-list">
+                <li class="navbar-list-link"><a href="#header" class="navlink" id="navlink"><span class="lang-home"></span></a></li>
+                <li class="navbar-list-link"><a href="#aboutMe" class="navlink" id="navlink"><span class="lang-about"></span></a></li>
+                <li class="navbar-list-link"><a href="#portfolio" class="navlink" id="navlink"><span class="lang-portfolio"></span></a></li>
+                <li class="navbar-list-link"><a href="#contact" class="navlink" id="navlink"><span class="lang-contact"></span></a></li>
             </ul>
         </nav>
         <!-- End of navbar -->
@@ -59,8 +66,8 @@
                 <!-- Portfolio -->
                 <div class="portfolio" id="portfolio">
                     <h2 id="portfolio-heading"><span class="lang-portfolio"></span></h2>
-                    <div class="row">
-                        <div class="col-sm-3">
+                    <div class="row" >
+                        <div class="col-sm-3" >
                             <div class="card">
                                 <img 
                                     src="" 
@@ -161,8 +168,9 @@
             scrollToTop.addEventListener("click", function () {
               $("html, body").animate({ scrollTop: 0 }, "slow");
             });
+            
         </script>
         <!-- End of functionality of the button scroll to top -->
-
+        <script type="text/javascript" src="app.js"></script>
     </body>
 </html>
