@@ -71,8 +71,9 @@ nav {
 /* End of main content*/
 
 /* Header --------------*/
-#particle-js {
+#particles-js {
   height: 100%;
+  width: 100%;
   background: #8d8c8c;
 }
 #header {
