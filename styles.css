@@ -26,11 +26,6 @@ nav {
 /* End of general styles*/
 
 /* Navbar --------------*/
-#language_select {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
 .navbar-list {
   list-style: none;
   display: flex;
@@ -61,6 +56,53 @@ nav {
 .navlink:hover::after {
   width: 100%;
   transition: width 0.3s;
+}
+.select-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+select {
+  font-size: 15px;
+  padding: 0.5em 2em 0.5em 1em;
+  background: #333333;
+  opacity: 0.9;
+  color: white;
+  border: 0;
+}
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background: #2a2a2a;
+  height: 100%;
+  width: 20px;
+  pointer-events: none;
+}
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.arrow::before {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid white;
+
+  top: 35%;
+}
+.arrow::after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+
+  top: 65%;
 }
 /* End of navbar -------*/
 
