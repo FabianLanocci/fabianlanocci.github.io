@@ -208,6 +208,7 @@ video {
 .card {
   position: relative;
   z-index: 1;
+  box-shadow: 3px 3px 25px #000000;
 }
 #portfolio-heading {
   padding-bottom: 2rem;
