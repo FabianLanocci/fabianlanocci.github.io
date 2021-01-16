@@ -67,6 +67,7 @@ nav {
 /* Main content --------*/
 .main-wrapper {
   padding: 5rem;
+  background-color: #f4f0e6;
 }
 /* End of main content*/
 
@@ -87,7 +88,6 @@ nav {
   font-weight: 700;
   letter-spacing: 6px;
   margin-bottom: 40px;
-  background: white;
   animation: text 3s 1;
 }
 #header-sub-heading {
@@ -111,20 +111,32 @@ nav {
 .aboutMe {
   padding: 1rem;
 }
+#aboutMe-heading {
+  padding-bottom: 2rem;
+}
 .aboutMe-text {
   padding-bottom: 4rem;
 }
 .container-stack {
-  padding: 4rem;
-  display: grid;
+  padding: 2rem 3rem 3rem 2rem;
+  display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2.5rem;
 }
-
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .stack-icon {
   height: 100px;
   width: 100px;
+}
+.stack-title {
+  font-size: 20px;
+  font-weight: 200;
 }
 /* End of about me ------*/
 
@@ -136,6 +148,15 @@ nav {
   position: relative;
   z-index: 1;
 }
+#portfolio-heading {
+  padding-bottom: 2rem;
+}
+.col-sm-6 {
+  padding: 2rem;
+}
+.card img {
+  max-height: 450px;
+}
 /* End of portfolio -----*/
 
 /* Contact --------------*/
@@ -145,6 +166,7 @@ nav {
 .contact-heading {
   letter-spacing: 0.1rem;
   font-weight: 800;
+  padding-bottom: 2rem;
 }
 .lang-contact-information {
   font-weight: 300;
@@ -346,6 +368,12 @@ nav {
   #header-sub-heading {
     font-size: 25px;
   }
+  .col-sm-6 {
+    padding-bottom: 2rem;
+  }
+  .card {
+    padding: 0.5rem;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container-stack {
@@ -363,6 +391,9 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1rem;
+  }
+  .col-sm-6 {
+    padding: 3rem;
   }
 }
 /* End of media queries -------*/

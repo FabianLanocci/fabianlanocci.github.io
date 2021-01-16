@@ -20,10 +20,12 @@ var LanguageList = {
     "project2-desc" : 'Website connected to a MySql database totally made in PHP with CodeIgniter. Hosted in 000webhostapp.',
     "project3" : "Pacman in Java",
     "project3-desc" : "Pacman game made in Java using Swing.",
+    "project4" : "Web API with .NET",
+    "project4-desc" : "MVC designed api made in .NET, using SQl Server. Tested with Swagger.",
     "contact-information" : "If you're interested in chatting or have any questions I'd love for you to reach out!",
     "phone" : "Phone",
     "curriculum" : "Resume",
-    "copyright" : "Created by Fabian Lanocci - 2021 All Rights Reserved"
+    "copyright" : "Copyright \xa9 2021 - Fabian Lanocci"
   };
   
   var WORDS_ES = {
@@ -42,10 +44,12 @@ var LanguageList = {
     "project2-desc" : 'Sitio web conectado a una base de datos MySql totalmente hecho en PHP con CodeIgniter. Hosteado en 000webhostapp.',
     "project3" : "Pacman en Java",
     "project3-desc" : "Juego de Pacman hecho en Java utilizando Swing.",
+    "project4" : "Web API usando .NET",
+    "project4-desc" : "Api diseñada con un diseño MVC en .NET, usando SQL server. Testeada con Swagger.",
     "contact-information" : "Si estás interesado/a en hacerme cualquier pregunta o simplemente charlar sobre algún proyecto, ¡me encantaría que te comunicaras conmigo!",
     "phone" : "Teléfono",
     "curriculum" : "Curriculum",
-    "copyright" : "Creado por Fabian Lanocci - 2021 Todos los derechos reservados"
+    "copyright" : "Copyright \xa9 2021 - Fabian Lanocci"
 
   };
   
