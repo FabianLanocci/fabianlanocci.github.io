@@ -12,11 +12,18 @@ var LanguageList = {
     "sub-heading" : "System analyst | Front-end developer",
     "about-description1" : "Hi! I'm a senior student at Instituto Argentino De La Empresa (IADE) - HILET, currently finishing Superior Technician in Systems (Systems Analyst). ",
     "about-description2" : "I've been studying HTML, CSS, Javascript and a few other web development concepts/languages by myself as I'm finishing my career and realized I love Front-end developing as much as to code in .NET or Java and now am trying to make the jump from college to the tech industry.",
-    "stack-heading" : "Skills",
+    "stack-heading" : "Stack",
+    "project-button" : "Go",
+    "project1" : "Barber shop project",
+    "project1-desc" : "Little side project for a barber shop site, made with HTML/CSS/JS.",
+    "project2": "PHP Documentation book",
+    "project2-desc" : 'Website connected to a MySql database totally made in PHP with CodeIgniter. Hosted in 000webhostapp.',
+    "project3" : "Pacman in Java",
+    "project3-desc" : "Pacman game made in Java using Swing.",
     "contact-information" : "If you're interested in chatting or have any questions I'd love for you to reach out!",
     "phone" : "Phone",
-    "curriculum" : "CV English",
-    "copyright" : "Created by Fabian Lanocci - 2020 All Rights Reserved"
+    "curriculum" : "Resume",
+    "copyright" : "Created by Fabian Lanocci - 2021 All Rights Reserved"
   };
   
   var WORDS_ES = {
@@ -27,11 +34,18 @@ var LanguageList = {
     "sub-heading" : "Analista de sistemas | Desarrollador Front-end",
     "about-description1" : "¡Hola! Soy estudiante de ultimo año en Instituto Argentino De La Empresa (IADE) - HILET, terminando Tecnicatura Superior en Sistemas (Analista de Sistemas).",
     "about-description2" : "He estado explorando/estudiando HTML, CSS, Javascript y algunos otros conceptos/lenguajes por mi mismo mientras terminaba la carrera y me di cuenta que me encanta el desarrollo en Front-end tanto como codear en .NET o Java asi que ahora estoy aqui para pegar el salto de la universidad a la industria de la tecnología.", 
-    "stack-heading" : "Conocimientos",
+    "stack-heading" : "Stack",
+    "project-button" : "Ir",
+    "project1" : "Barbería",
+    "project1-desc" : "Pequeño proyecto sobre un sitio web para una barbería, hecho con HTML/CSS/JS.",
+    "project2": "Libro de documentación sobre PHP",
+    "project2-desc" : 'Sitio web conectado a una base de datos MySql totalmente hecho en PHP con CodeIgniter. Hosteado en 000webhostapp.',
+    "project3" : "Pacman en Java",
+    "project3-desc" : "Juego de Pacman hecho en Java utilizando Swing.",
     "contact-information" : "Si estás interesado/a en hacerme cualquier pregunta o simplemente charlar sobre algún proyecto, ¡me encantaría que te comunicaras conmigo!",
     "phone" : "Teléfono",
-    "curriculum" : "CV Español",
-    "copyright" : "Creado por Fabian Lanocci - 2020 Todos los derechos reservados"
+    "curriculum" : "Curriculum",
+    "copyright" : "Creado por Fabian Lanocci - 2021 Todos los derechos reservados"
 
   };
   

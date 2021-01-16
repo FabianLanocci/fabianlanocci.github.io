@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>Barbería</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c3b741a5e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  
+  <body>
+    <div class="container">
+      <!--Navbar-->
+      <nav class="nav">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              id="logo"
+              src="./images/logo.jpg"
+              alt="logo del Gran Bastardo"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#video-container" accesskey="i">Inicio</a></li>
+          <li><a href="#turnos" accesskey="t">Turnos</a></li>
+          <li><a href="#servicios" accesskey="s">Servicios</a></li>
+          <li><a href="#contact" accesskey="c">Contacto</a></li>
+        </ul>
+
+        <div class="nav-button">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <!--End of Navbar-->
+
+      <!--Header-->
+      <header class="header">
+        <!--div class="header-text">
+        <h1 class="heading">Peluquería de prueba</h1>
+        <p class="header-paragraph">Barbería a la vieja usanza #OldSchool. 
+				<em>"El resurgir de un oficio olvidado"</em></p>
+        </div-->
+        <div class="video-container" id="video-container">
+          <video class="video-banner" autoplay loop muted>
+            <source src="./video_banner.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </header>
+      <!--End of header-->
+
+      <!--Quienes somos-->
+      <section class="turnos" id="turnos">
+        <h1 class="turnos-heading">Nuestro equipo</h1>
+        <div class="cards-wrapper">
+          <div class="card">
+            <div class="front-side">
+              <img
+                src="./images/diego.jpg"
+                alt="Imagen que presenta a uno de los peluqueros. Este es Diego."
+                class="card-image"
+              />
+              <h1 class="peluquero-name">Diego</h1>
+              <button class="navigation-button">Sacar turno &gt; &gt;</button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">&lt; &lt; Volver</button>
+              <h3 class="horario">10 hrs. - 19:30 hrs.</h3>
+              <button onclick="turnos.php" class="card-button">
+                Sacar turno
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img
+                src="./images/paula.jpg"
+                alt="Imagen que presenta a uno de los peluqueros. Esta es Paula."
+                class="card-image"
+              />
+              <h1 class="peluquero-name">Paula</h1>
+              <button class="navigation-button">Sacar turno &gt; &gt;</button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">&lt; &lt; Volver</button>
+              <h3 class="horario">10 hrs. - 19:30 hrs.</h3>
+              <button class="card-button">Sacar turno</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img
+                src="./images/comodin.jpg"
+                alt="Imagen que presenta a uno de los peluqueros. No tiene ningun peluquero asignado, es solo es un comodin por ahora."
+                class="card-image"
+              />
+              <h1 class="peluquero-name">Comodin</h1>
+              <button class="navigation-button">Sacar turno &gt; &gt;</button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">&lt; &lt; Volver</button>
+              <h3 class="horario">10 hrs. - 19:30 hrs.</h3>
+              <button class="card-button">Sacar turno</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img
+                src="./images/comodin.jpg"
+                alt="Imagen que presenta a uno de los peluqueros. No tiene ningun peluquero asignado, es solo es un comodin por ahora."
+                class="card-image"
+              />
+              <h1 class="peluquero-name">Comodin</h1>
+              <button class="navigation-button">Sacar turno &gt; &gt;</button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">&lt; &lt; Volver</button>
+              <h3 class="horario">10 hrs. - 19:30 hrs.</h3>
+              <button class="card-button">Sacar turno</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of Quienes somos-->
+
+      <!--servicios-->
+      <section class="servicios" id="servicios">
+        <img
+          src="./images/fondo_servicios.jpg"
+          alt=""
+          class="bg-image"
+        />
+        <div class="servicios-wrapper">
+          <div class="servicios-background">
+            <div class="precio-corte">
+              <img
+                src="./images/corte.jpg"
+                alt="Corte simple"
+                class="corte-image"
+              />
+              <div class="corte-text">
+                <h1 class="corte-heading">Corte $350</h1>
+              </div>
+            </div>
+          </div>
+          <div class="servicios-background">
+            <div class="precio-corte">
+              <img
+                src="./images/corte_navaja.jpg"
+                alt="Corte con navaja"
+                class="corte-image"
+              />
+              <div class="corte-text">
+                <h1 class="corte-heading">Corte rasurado a navaja $380</h1>
+              </div>
+            </div>
+          </div>
+          <div class="servicios-background">
+            <div class="precio-corte">
+              <img
+                src="./images/barba.jpg"
+                alt="Barba"
+                class="corte-image"
+              />
+              <div class="corte-text">
+                <h1 class="corte-heading">Arreglo de barba $300</h1>
+                <p class="corte-information">(SERVICIO SUSPENDIDO)</p>
+              </div>
+            </div>
+          </div>
+          <div class="servicios-background">
+            <div class="precio-corte">
+              <img
+                src="./images/barba_toalla.jpg""
+                alt="Corte y barba con fomento"
+                class="corte-image"
+              />
+              <div class="corte-text">
+                <h1 class="corte-heading">
+                  Corte y barba con fomento / toalla caliente y fría $500
+                </h1>
+                <p class="corte-information">(SERVICIO SUSPENDIDO)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of servicios-->
+
+      <!--Contacto-->
+      <!--Redes sociales y un formulario chiquitito y sutil donde mandar un mail privado. Con eso estamos-->
+      <section class="contact" id="contact">
+        <img
+          src="./images/fondo_contacto.jpg"
+          alt=""
+          class="bg-image-2"
+        />
+        <div class="contact-wrapper">
+          <h1 class="contact-heading">Contactános</h1>
+          <form action="" class="contact-form center">
+            <div class="contact-redes">
+              <h3 class="redes-information">
+                ¡Seguinos en nuestras redes así no te perdés de las promos y de
+                los productos que también vendemos!
+              </h3>
+              <ul class="redes-list">
+                <li class="redes-item">
+                  <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+                  Turnos por Whatsapp al 223 597-8821
+                </li>
+                <li class="redes-item">
+                  <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                  <a
+                    href="https://www.instagram.com/barberiadiegogarcialoredo/"
+                    class="redes-link"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="redes-item">
+                  <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                  <a
+                    href="https://www.facebook.com/diegogarcialoredo/"
+                    class="redes-link"
+                    target="_blank"
+                    >Facebook</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <h3 class="form-heading">
+              Para otras consultas o dudas mandanos un mensaje y te respondemos
+            </h3>
+            <div class="input-group">
+              <label>Nombre completo</label>
+              <input
+                type="text"
+                class="contact-input"
+                placeholder="Ingresá tu nombre"
+              />
+            </div>
+            <div class="input-groups">
+              <div class="input-group">
+                <label>Email</label>
+                <input
+                  type="email"
+                  class="contact-input"
+                  placeholder="Ingresá tu email"
+                />
+              </div>
+              <div class="input-group">
+                <label>Teléfono</label>
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Ingresá tu número de teléfono"
+                />
+              </div>
+            </div>
+            <div class="input-group">
+              <label>Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="3"
+                class="form-textarea"
+                placeholder="Escribí acá tu mensaje..."
+              ></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="form-btn" />
+          </form>
+        </div>
+      </section>
+      <!--End of Contacto-->
+
+      <!--Quiero agregar un mapita acá, antes del footer. Hay que agregar una sección en el navbar
+      y mantener el responsive. Revisar.-->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-list">
+          <a href="#video-container" class="footer-link">Inicio</a>
+          <a href="#turnos" class="footer-link">Turnos</a>
+          <a href="#servicios" class="footer-link">Servicios</a>
+          <a href="#contact" class="footer-link">Contacto</a>
+        </div>
+        <p class="footer-paragraph">Creado por Fabian Lanocci - 2021 Todos los derechos reservados</p>
+      </footer>
+      <!-- End of Footer-->
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

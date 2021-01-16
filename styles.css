@@ -71,18 +71,14 @@ nav {
 /* End of main content*/
 
 /* Header --------------*/
-#particles-js {
-  height: 100%;
-  width: 100%;
-  background: #8d8c8c;
-}
 #header {
+  padding: 1rem;
   text-align: center;
   display: block;
   position: relative;
-  top: 20vh;
+  top: 35vh;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   color: #000000;
 }
 #header-heading {
@@ -112,8 +108,14 @@ nav {
 /* End of header -------*/
 
 /* About me ------------*/
+.aboutMe {
+  padding: 1rem;
+}
+.aboutMe-text {
+  padding-bottom: 4rem;
+}
 .container-stack {
-  padding: 5rem;
+  padding: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -127,6 +129,9 @@ nav {
 /* End of about me ------*/
 
 /* Portfolio ------------*/
+.portfolio {
+  padding: 1rem 1rem 4rem 1rem;
+}
 .card {
   position: relative;
   z-index: 1;
@@ -138,12 +143,11 @@ nav {
   padding: 1rem;
 }
 .contact-heading {
-  /*color: white;*/
   letter-spacing: 0.1rem;
   font-weight: 800;
 }
-.contact-information {
-  font-weight: 600;
+.lang-contact-information {
+  font-weight: 300;
 }
 .social-networks {
   padding: 2.5rem;
@@ -151,7 +155,7 @@ nav {
 .social-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
   padding-bottom: 3rem;
 }
@@ -159,14 +163,13 @@ nav {
   display: flex;
   justify-content: center;
 }
-.social-list-item {
-}
 .fa {
   padding: 20px 20px 20px 20px;
   font-size: 30px;
   width: 100px;
   text-align: center;
   text-decoration: none;
+  box-shadow: 10px 10px 9px #000000;
 }
 .fa:hover {
   opacity: 0.7;
@@ -193,16 +196,47 @@ nav {
   background: #131417;
   color: white;
 }
+.lang-phone {
+  white-space: nowrap;
+}
 /* End of contact -------*/
 
 /* Footer ---------------*/
+.footer {
+  background: #000000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  opacity: 0.8;
+  z-index: 2;
+}
+#curriculum-link {
+  font-size: 20px;
+  padding-left: 1rem;
+  float: left;
+  word-spacing: 10px;
+  text-decoration: none;
+  color: white;
+}
+#curriculum-link:hover {
+  text-decoration: none;
+}
+.lang-copyright {
+  font-size: 15px;
+  padding-right: 1rem;
+  float: right;
+  text-decoration: none;
+  color: white;
+}
 /* End of footer --------*/
 
 /* Scroll to top button */
 #scrollToTop {
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 35px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -279,6 +313,17 @@ nav {
   .main-wrapper {
     padding: 1.5rem;
   }
+  @keyframes text {
+    0% {
+      color: white;
+      letter-spacing: 20px;
+      margin-bottom: -40px;
+    }
+    100% {
+      letter-spacing: 6px;
+      margin-bottom: 40px;
+    }
+  }
   .container-stack {
     padding: 2rem 0 2rem 0;
     display: grid;
@@ -290,10 +335,16 @@ nav {
     flex-direction: column;
   }
   .social-list-item {
-    padding: 2rem;
+    padding: 0 0 2rem 0;
   }
   .fa {
     width: 100%;
+  }
+  #header-heading {
+    font-size: 40px;
+  }
+  #header-sub-heading {
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -302,6 +353,15 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-stack {
+    padding: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1rem;
   }
 }
