@@ -135,6 +135,13 @@ select option {
   height: 100vh;
   color: #000000;
   background-color: #f4f0e6;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #f4f0e6 250px
+    ),
+    repeating-linear-gradient(#dfdfdf55, #dfdfdf);
 }
 #header-heading {
   position: relative;
@@ -353,6 +360,10 @@ video {
 /* Media queries --------------*/
 @media screen and (max-width: 768px) {
   /* Nav media queries */
+  .select-button {
+    top: 20px;
+    left: 30px;
+  }
   .navbar-list {
     position: fixed;
     background: #333333;
