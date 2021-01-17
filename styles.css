@@ -20,6 +20,9 @@ nav {
 .bg-black {
   background-color: #333333;
 }
+.bg-maincolor {
+  background-color: #f4f0e6;
+}
 .text-white a {
   color: white;
 }
@@ -57,28 +60,37 @@ nav {
   width: 100%;
   transition: width 0.3s;
 }
+.language_icon {
+  height: 30px;
+  width: auto;
+}
 .select-button {
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 10px;
 }
 select {
-  font-size: 15px;
-  padding: 0.5em 2em 0.5em 1em;
-  background: #333333;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0.5em 2em 0.5em 0;
   opacity: 0.9;
-  color: white;
+  color: black;
   border: 0;
+  transition: background 0.8s;
+}
+select option {
+  font-size: 20px;
+  font-weight: 200;
 }
 .arrow {
   position: absolute;
   top: 0;
   right: 0;
   display: block;
-  background: #2a2a2a;
   height: 100%;
   width: 20px;
   pointer-events: none;
+  transition: background 0.8s;
 }
 .arrow::before,
 .arrow::after {
@@ -93,14 +105,14 @@ select {
 .arrow::before {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid currentColor;
 
   top: 35%;
 }
 .arrow::after {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid white;
+  border-top: 5px solid currentColor;
 
   top: 65%;
 }

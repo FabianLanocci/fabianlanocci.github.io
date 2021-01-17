@@ -1,3 +1,6 @@
+const select = document.getElementById("language_select");
+const arrow = document.getElementById("arrow");
+
 var LanguageList = {
     "EN" : "English",
     "ES" : "Español",
@@ -66,6 +69,10 @@ var LanguageList = {
       });
       
     loadsLanguage("EN");
+
+    //Only made because if not, the select button will start with its given by the browser look
+    select.classList.add("bg-maincolor");
+    arrow.classList.add("bg-maincolor");
   }
   
   function loadsLanguage(lang){
@@ -78,8 +85,10 @@ var LanguageList = {
 
     if(lang == "EN"){
       document.getElementById("curriculum-link").href ="https://drive.google.com/file/d/1kDCtpYjLmOvEgqS2XnrrIUigqwFQO-b2/view?usp=sharing";
+      document.getElementById("language_icon").src ="./res/icons/english.png";
     } else if (lang == "ES"){
       document.getElementById("curriculum-link").href ="https://drive.google.com/file/d/18lK6V6QVS5fvvU8f4Sp9pqlCkK5-izOp/view?usp=sharing";
+      document.getElementById("language_icon").src ="./res/icons/spanish.png";
     }
   }
 
@@ -101,9 +110,21 @@ var LanguageList = {
     if(window.pageYOffset > 0){
       navbar.classList.add("bg-black");
       navbar.classList.add("text-white");
+      select.classList.remove("bg-maincolor");
+      select.classList.add("bg-black");
+      select.classList.add("text-white");
+      arrow.classList.remove("bg-maincolor");
+      arrow.classList.add("bg-black");
+      arrow.classList.add("text-white");
     } else{
       navbar.classList.remove("bg-black");
       navbar.classList.remove("text-white");
+      select.classList.remove("bg-black");
+      select.classList.remove("text-white");
+      select.classList.add("bg-maincolor");
+      arrow.classList.remove("bg-black");
+      arrow.classList.remove("text-white");
+      arrow.classList.add("bg-maincolor");
       if(window.innerWidth < 768 ){
         navbar.classList.add("text-white");
       }
