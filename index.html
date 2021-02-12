@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c3b741a5e3.js" crossorigin="anonymous"></script>
+
+        <!-- CDN for using Swiper.js -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
         <title>Fabian Lanocci - portfolio</title>
     </head>
 
@@ -54,6 +58,7 @@
                         <div class="stack"><img src="res/icons/html5.png" alt="HTML5" class="stack-icon"><p class="stack-title">HTML5</p></div>
                         <div class="stack"><img src="res/icons/css-3.png" alt="CSS3" class="stack-icon"><p class="stack-title">CSS3</p></div>
                         <div class="stack"><img src="res/icons/javascript.png" alt="Javascript" class="stack-icon"><p class="stack-title">Javascript</p></div>
+                        <div class="stack"><img src="res/icons/angular.png" alt="Angular" class="stack-icon"><p class="stack-title">Angular</p></div>
                         <div class="stack"><img src="res/icons/visual-studio.png" alt="Visual Studio" class="stack-icon"><p class="stack-title">.Net</p></div>
                         <div class="stack"><img src="res/icons/java.png" alt="Java" class="stack-icon"><p class="stack-title">Java</p></div>
                         <div class="stack"><img src="res/icons/git.png" alt="Git" class="stack-icon"><p class="stack-title">Git/GitHub</p></div>
@@ -65,67 +70,77 @@
                 <!-- End of about me -->
 
                 <!-- Portfolio -->
+                
+                <!-- CAMBIAR, idea de la gordita, hacer un slider con los proyectos y agregar ahora el de angular! -->
                 <div class="portfolio" id="portfolio">
                     <h2 id="portfolio-heading"><span class="lang-portfolio"></span></h2>
-                    <div class="row" >
-                        <div class="col-sm-6" >
-                            <div class="card">
-                                <img 
-                                    src="./res/thumbnails/proyecto_peluqueria.png" 
-                                    alt="proyecto barberia" 
-                                    class="card-img-top"
-                                >
-                                <div class="card-body">
-                                    <h5 class="card-title"><span class="lang-project1"></span></h5>
-                                    <p class="card-text"><span class="lang-project1-desc"></span></p>
-                                    <a href="./res/pages/ProyectoBarberia/index.html" class="btn btn-primary" target="_blank"><span class="lang-project-button"></span></a>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                Proyecto angular
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img 
+                                        src="./res/thumbnails/proyecto_peluqueria.png" 
+                                        alt="proyecto barberia" 
+                                        class="card-img-top"
+                                    >
+                                    <div class="card-body">
+                                        <h5 class="card-title"><span class="lang-project1"></span></h5>
+                                        <p class="card-text"><span class="lang-project1-desc"></span></p>
+                                        <a href="./res/pages/ProyectoBarberia/index.html" class="btn btn-primary" target="_blank"><span class="lang-project-button"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img 
+                                        src="./res/thumbnails/proyecto_documentacion.png" 
+                                        alt="proyecto documentacion" 
+                                        class="card-img-top"
+                                    >
+                                    <div class="card-body">
+                                        <h5 class="card-title"><span class="lang-project2"></span></h5>
+                                        <p class="card-text"><span class="lang-project2-desc"></span></p>
+                                        <a href="https://xhylonus.000webhostapp.com/" class="btn btn-primary" target="_blank"><span class="lang-project-button"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img 
+                                        src="./res/thumbnails/proyecto_pacman.png" 
+                                        alt="proyecto pacman" 
+                                        class="card-img-top"
+                                    >
+                                    <div class="card-body">
+                                        <h5 class="card-title"><span class="lang-project3"></span></h5>
+                                        <p class="card-text"><span class="lang-project3-desc"></span></p>
+                                        <a href="https://github.com/FabianLanocci/java-pacman-game" class="btn btn-primary" target="_blank"><span class="lang-project-button"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img 
+                                        src="./res/thumbnails/proyecto_webapi.png" 
+                                        alt="proyecto webapi" 
+                                        class="card-img-top"
+                                    >
+                                    <div class="card-body">
+                                        <h5 class="card-title"><span class="lang-project4"></span></h5>
+                                        <p class="card-text"><span class="lang-project4-desc"></span></p>
+                                        <a href="https://github.com/FabianLanocci/asp.net-web-api-shopping" class="btn btn-primary" target="_blank"><span class="lang-project-button"></span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="card">
-                                <img 
-                                    src="./res/thumbnails/proyecto_documentacion.png" 
-                                    alt="proyecto documentacion" 
-                                    class="card-img-top"
-                                >
-                                <div class="card-body">
-                                    <h5 class="card-title"><span class="lang-project2"></span></h5>
-                                    <p class="card-text"><span class="lang-project2-desc"></span></p>
-                                    <a href="https://xhylonus.000webhostapp.com/" class="btn btn-primary" target="_blank"><span class="lang-project-button"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card">
-                                <img 
-                                    src="./res/thumbnails/proyecto_pacman.png" 
-                                    alt="proyecto pacman" 
-                                    class="card-img-top"
-                                >
-                                <div class="card-body">
-                                    <h5 class="card-title"><span class="lang-project3"></span></h5>
-                                    <p class="card-text"><span class="lang-project3-desc"></span></p>
-                                    <a href="https://github.com/FabianLanocci/java-pacman-game" class="btn btn-primary" target="_blank"><span class="lang-project-button"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card">
-                                <img 
-                                    src="./res/thumbnails/proyecto_webapi.png" 
-                                    alt="proyecto webapi" 
-                                    class="card-img-top"
-                                >
-                                <div class="card-body">
-                                    <h5 class="card-title"><span class="lang-project4"></span></h5>
-                                    <p class="card-text"><span class="lang-project4-desc"></span></p>
-                                    <a href="https://github.com/FabianLanocci/asp.net-web-api-shopping" class="btn btn-primary" target="_blank"><span class="lang-project-button"></span></a>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
                 <!-- Enf of portfolio -->
@@ -160,6 +175,9 @@
         </div>
         <!-- End of main content -->
 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="/app.js"></script>
+
         <!-- Functionality of the button scroll to top 
         This piece of code is embedded because, apparently, the same piece of code inside the
         the javascript file won't work. I have to check this out. For now it stays here so it
@@ -174,8 +192,20 @@
               $("html, body").animate({ scrollTop: 0 }, "slow");
             });
             
+            var swiper = new Swiper('.swiper-container', {
+              cssMode: true,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination'
+              },
+              mousewheel: true,
+              keyboard: true,
+            });
         </script>
         <!-- End of functionality of the button scroll to top -->
-        <script type="text/javascript" src="/app.js"></script>
+        
     </body>
 </html>
