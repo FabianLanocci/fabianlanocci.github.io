@@ -248,14 +248,13 @@ video {
   -webkit-align-items: center;
   align-items: center;
 }
-.card {
-  z-index: 1;
-}
+
 #portfolio-heading {
   padding-bottom: 2rem;
 }
-.card img {
-  max-height: 450px;
+.slide img {
+  max-height: 300px;
+  width: 100%;
 }
 /* End of portfolio -----*/
 
