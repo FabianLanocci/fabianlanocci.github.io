@@ -259,11 +259,12 @@ video {
 .slide-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .slide-repository-link {
   padding: 0.5rem;
+  margin: 0.5rem;
   background-color: #007bff;
   border-radius: 5px;
   color: white;
