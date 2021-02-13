@@ -45,7 +45,7 @@ var LanguageList = {
     "stack-heading" : "Stack",
     "project-repository" : "Código fuente",
     "project-live" : "Ver en vivo",
-    "project1" : "Reproductor de música Insside",
+    "project1" : "Reproductor de música Spotify API",
     "project1-desc" : "Proyecto en angular que, consumiendo la API de Spotify, permite realizar varias acciones relacionadas a la reproducción de música.",
     "project2" : "Barbería",
     "project2-desc" : "Pequeño proyecto sobre un sitio web para una barbería, hecho con HTML/CSS/JS.",
