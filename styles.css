@@ -225,23 +225,17 @@ video {
 .portfolio {
   padding: 1rem 1rem 4rem 1rem;
 }
-
-.swiper-wrapper {
+#portfolio-heading {
+  padding-bottom: 2rem;
 }
 .swiper-container {
   width: 100%;
   height: 100%;
+  margin-top: 1rem;
 }
-
 .swiper-slide {
   text-align: center;
   background: #f4f0e6;
-}
-
-#portfolio-heading {
-  padding-bottom: 2rem;
-}
-.slide {
 }
 .slide img {
   max-height: 350px;
@@ -249,8 +243,6 @@ video {
 }
 .slide-body {
   padding: 2rem 0 3rem 0;
-}
-.slide-tittle {
 }
 .slide-text {
   white-space: normal;
