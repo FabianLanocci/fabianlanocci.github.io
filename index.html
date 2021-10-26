@@ -4,20 +4,59 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c3b741a5e3.js" crossorigin="anonymous"></script>
 
-        <!-- CDN for using Swiper.js -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-        <title>Fabian Lanocci - portfolio</title>
+        <title>Fabian Lanocci</title>
     </head>
 
     <body>
-        <!-- Navbar -->
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <div class="select-button">
+                        <img src="" alt="language icon" class="language_icon" id="language_icon">
+                        <select id="language_select" onchange="loadsLanguage(this.value)"></select>
+                        <span class="arrow" id="arrow"></span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><span class="lang-home"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="lang-about"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="lang-portfolio"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="lang-contact"></span></a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <div class="topbar">
+                <a href="#" class="logo"><span class="lang-portfolio"></span></a>
+                <div class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/app.js"></script>
+        <script>
+            let toggle = document.querySelector('.toggle');
+            let topbar = document.querySelector('.topbar');
+            let navigation = document.querySelector('.navigation');
+        </script>
+        <!-- Old Portfolio -->
+        <!-- Navbar >
         <nav id="navbar">
             <div class="hamburguer" id="hamburguer">
                 <div class="line"></div>
@@ -36,20 +75,20 @@
                 <li class="navbar-list-link"><a href="#contact" class="navlink" ><span class="lang-contact"></span></a></li>
             </ul>
         </nav>
-        <!-- End of navbar -->
+        <End of navbar >
 
-        <!-- Header -->
+        < Header >
         <header id ="header">
-            <!--video autoplay muted loop src="./res/video/background_video.mp4"></video-->
+            <video autoplay muted loop src="./res/video/background_video.mp4"></video>
             <h1 id="header-heading">Fabian Lanocci</h1>
             <h2 id="header-sub-heading"><span class="lang-sub-heading"></span></h2>
         </header>
-        <!-- End of header -->
+        <End of header>
         
-        <!-- Main content -->
+        <Main content>
         <div class="main-wrapper">
             <div class="main-content">
-                <!-- About Me -->
+                < About Me >
                 <div class="aboutMe" id="aboutMe">
                     <h2 id="aboutMe-heading"><span class="lang-about"></span></h2>
                     <p class="aboutMe-text"><span class="lang-about-description1"></span><br><span class="lang-about-description2"></span></p>
@@ -67,16 +106,16 @@
                         <div class="stack"><img src="res/icons/codeigniter.png" alt="CodeIgniter" class="stack-icon"><p class="stack-title">CodeIgniter</p></div>
                     </div>
                 </div>
-                <!-- End of about me -->
+                < End of about me >
 
-                <!-- Portfolio -->
+                < Portfolio >
                 
-                <!-- CAMBIAR, idea de la gordita, hacer un slider con los proyectos y agregar ahora el de angular! -->
+                < CAMBIAR, idea de la gordita, hacer un slider con los proyectos y agregar ahora el de angular! >
                 <div class="portfolio" id="portfolio">
                     <h2 id="portfolio-heading"><span class="lang-portfolio"></span></h2>
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <!--div class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="slide">
                                     <img 
                                         src="./res/thumbnails/proyecto_inssideMusic.png" 
@@ -91,7 +130,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div-->
+                            </div>
                             <div class="swiper-slide">
                                 <div class="slide">
                                     <img 
@@ -159,16 +198,16 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Add Pagination -->
+                        < Add Pagination >
                         <div class="swiper-pagination"></div>
-                        <!-- Add Arrows -->
+                        <Add Arrows >
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-                <!-- Enf of portfolio -->
+                < Enf of portfolio >
 
-                <!-- Contact -->
+                < Contact >
                 <div class="contact" id="contact">
                     <h2 id="contact-heading"><span class="lang-contact"></span></h2>
                     <h3 id="contact-information"><span class="lang-contact-information"></span></h3>
@@ -184,27 +223,27 @@
                         <p class="social-item"><span class="lang-phone"></span>: +54 (0223) 6699239</p>
                     </div>
                 </div>
-                <!-- End of contact -->
+                < End of contact >
             </div>
 
-            <!-- Footer -->
+            <Footer >
             <footer class="footer">
                 <a href="https://drive.google.com/file/d/1kDCtpYjLmOvEgqS2XnrrIUigqwFQO-b2/view?usp=sharing" id="curriculum-link" target="_blank"><i class="fas fa-file-download"></i> <span class="lang-curriculum"></span></a>
                 <span class="lang-copyright"></span>
-                <!--GO TO TOP-->
+                <GO TO TOP>
             </footer>
-            <!-- End of footer -->
+            < End of footer>
 
         </div>
-        <!-- End of main content -->
+        < End of main content >
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script type="text/javascript" src="/app.js"></script>
+        
 
-        <!-- Functionality of the button scroll to top 
+        <Functionality of the button scroll to top 
         This piece of code is embedded because, apparently, the same piece of code inside the
         the javascript file won't work. I have to check this out. For now it stays here so it
-        has its corresponding functionality.-->
+        has its corresponding functionality.>
         <button id="scrollToTop">
             <i class="material-icons">arrow_upward</i>
         </button>
@@ -228,7 +267,7 @@
               keyboard: false,
             });
         </script>
-        <!-- End of functionality of the button scroll to top -->
+        <End of functionality of the button scroll to top >
         
     </body>
 </html>

@@ -3,8 +3,120 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Poppings', sans-serif
+}
+:root {
+  --black: #333;
+  --black2: #333;
+  --white: #fff;
+  --white2: #fff;
 }
 body {
+  overflow-x:hidden;
+}
+
+.container {
+  position: relative;
+  width:100%;
+
+}
+
+.navigation {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  background: var(--white2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.navigation ul {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  letter-spacing: 2px;
+  opacity: 0.5;
+
+}
+
+
+.navigation ul li a:hover {
+  opacity: 1;
+}
+
+.main {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  background: var(--white);
+  min-height: 100vh;
+}
+
+.main .topbar {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 300px);
+  left: 300px;
+  background: var(--white2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  height: 60px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.main .topbar .logo {
+  color: var(--black);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main .topbar .toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--black);
+}
+
+
+
+
+/*Old styles*/
+/*body {
   font-family: sans-serif;
   width: 100%;
   height: 100%;
@@ -27,9 +139,9 @@ nav {
 .text-white a {
   color: white;
 }
-/* End of general styles*/
+/* End of general styles
 
-/* Navbar --------------*/
+/* Navbar --------------
 .navbar-list {
   list-style: none;
   display: flex;
@@ -118,16 +230,16 @@ select option {
 
   top: 65%;
 }
-/* End of navbar -------*/
+/* End of navbar -------
 
-/* Main content --------*/
+/* Main content --------
 .main-wrapper {
   padding: 5rem;
   background-color: #f4f0e6;
 }
-/* End of main content*/
+/* End of main content
 
-/* Header --------------*/
+/* Header --------------
 #header {
   padding: 1rem;
   text-align: center;
@@ -187,9 +299,9 @@ video {
   object-position: center;
   object-fit: cover;
 }
-/* End of header -------*/
+/* End of header -------
 
-/* About me ------------*/
+/* About me ------------
 .aboutMe {
   padding: 1rem;
 }
@@ -220,9 +332,9 @@ video {
   font-size: 20px;
   font-weight: 200;
 }
-/* End of about me ------*/
+/* End of about me ------
 
-/* Portfolio ------------*/
+/* Portfolio ------------
 .portfolio {
   padding: 1rem 1rem 4rem 1rem;
 }
@@ -267,9 +379,9 @@ video {
   background-color: #00346b;
   color: white;
 }
-/* End of portfolio -----*/
+/* End of portfolio -----
 
-/* Contact --------------*/
+/* Contact --------------
 .contact {
   padding: 1rem;
 }
@@ -331,9 +443,9 @@ video {
 .lang-phone {
   white-space: nowrap;
 }
-/* End of contact -------*/
+/* End of contact -------
 
-/* Footer ---------------*/
+/* Footer ---------------
 .footer {
   background: #000000;
   position: fixed;
@@ -362,9 +474,9 @@ video {
   text-decoration: none;
   color: white;
 }
-/* End of footer --------*/
+/* End of footer --------
 
-/* Scroll to top button */
+/* Scroll to top button 
 #scrollToTop {
   position: fixed;
   right: 10px;
@@ -384,9 +496,9 @@ video {
 #scrollToTop:active {
   background: grey;
 }
-/* End of scroll to top button */
+/* End of scroll to top button 
 
-/* Media queries --------------*/
+/* Media queries --------------
 @media screen and (max-width: 768px) {
   .select-button {
     top: 10px;
@@ -522,4 +634,4 @@ video {
     padding: 3rem;
   }
 }
-/* End of media queries -------*/
+/* End of media queries -------
