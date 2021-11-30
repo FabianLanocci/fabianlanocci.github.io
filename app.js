@@ -10,13 +10,13 @@ var LanguageList = {
   var WORDS_EN = {
     "home" : "Home",
     "about" : "About me",
-    "portfolio" : "Portfolio",
+    "projects" : "My projects",
     "contact" : "Contact",
     "sub-heading" : "System analyst | Front-end developer",
     "download-CV-btn" : "Download my CV",
     "about-description1" : "Hi! I'm a senior student at Instituto Argentino De La Empresa (IADE) - HILET, currently finishing Superior Technician in Systems (Systems Analyst). ",
     "about-description2" : "I've been studying HTML, CSS, Javascript and a few other web development concepts/languages by myself as I'm finishing my career and realized I love Front-end developing as much as to code in .NET or Java and now am trying to make the jump from college to the tech industry.",
-    "stack-heading" : "Stack",
+    "skills-heading" : "Skills",
     "project-repository" : "Source code",
     "project-live" : "Live version",
     "project1" : "Spotify music listener",
@@ -38,13 +38,13 @@ var LanguageList = {
   var WORDS_ES = {
     "home" : "Inicio",
     "about" : "Sobre mi",
-    "portfolio" : "Portafolio",
+    "projects" : "Mis proyectos",
     "contact" : "Contacto",
     "sub-heading" : "Analista de sistemas | Desarrollador Front-end",
     "download-CV-btn" : "Descarga mi CV",
     "about-description1" : "¡Hola! Soy estudiante de ultimo año en Instituto Argentino De La Empresa (IADE) - HILET, terminando Tecnicatura Superior en Sistemas (Analista de Sistemas).",
     "about-description2" : "He estado explorando/estudiando HTML, CSS, Javascript y algunos otros conceptos/lenguajes por mi mismo mientras terminaba la carrera y me di cuenta que me encanta el desarrollo en Front-end tanto como codear en .NET o Java asi que ahora estoy aqui para pegar el salto de la universidad a la industria de la tecnología.", 
-    "stack-heading" : "Stack",
+    "skills-heading" : "Conocimientos",
     "project-repository" : "Código fuente",
     "project-live" : "Ver en vivo",
     "project1" : "Reproductor de música Spotify API",
@@ -100,7 +100,19 @@ var LanguageList = {
     }
   }
 
-  // Hamburguer functionality
+  const toggle = document.querySelector('.toggle');
+  const topbar = document.querySelector('.topbar');
+  const navigation = document.querySelector('.navigation');
+  const main = document.querySelector('.main');
+
+  toggle.onclick = function() {
+    toggle.classList.toggle('active');
+    topbar.classList.toggle('active');
+    navigation.classList.toggle('active');
+    main.classList.toggle('active');
+  }
+
+  /* Hamburguer functionality
   const hamburger = document.getElementById("hamburguer");
   const navLinks = document.getElementById("navbar-list");
   const links = document.getElementsByClassName(".navlink");
@@ -111,9 +123,9 @@ var LanguageList = {
       links.forEach(link => {
       link.classList.toggle("fade");
       });
-  });
+  });*/
 
-  // Navbar functionality when scrolling
+  /* Navbar functionality when scrolling
   window.addEventListener("scroll", function() {
     if(window.pageYOffset > 0){
       navbar.classList.add("bg-black");
@@ -137,6 +149,6 @@ var LanguageList = {
         navbar.classList.add("text-white");
       }
     }
-  });
+  });*/
  
 

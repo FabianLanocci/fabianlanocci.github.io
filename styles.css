@@ -8,6 +8,7 @@
 :root {
   --black: #333;
   --black2: #333;
+  --grey: #777;
   --white: #fff;
   --white2: #fff;
 }
@@ -136,21 +137,21 @@ body {
   min-height: 100vh;
 }
 
-.banner {
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
 }
 
-.banner .content {
+.home .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.banner .imgBx {
+.home .imgBx {
   position: relative;
   width: 300px;
   height: 300px;
@@ -159,7 +160,7 @@ body {
   margin-bottom: 20px;
 }
 
-.banner .imgBx img {
+.home .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -168,7 +169,7 @@ body {
   object-fit: cover;
 }
 
-.banner .content h3 {
+.home .content h3 {
   position: relative;
   font-size: 1.4em;
   color: var(--black);
@@ -176,11 +177,11 @@ body {
   text-transform: uppercase;
 }
 
-.banner .content p {
-  color: #777;
+.content p {
+  color: var(--grey);
 }
 
-.banner .content .btn {
+.home .content .btn {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
@@ -216,4 +217,57 @@ body {
 .socialMedia li a:hover {
   background: var(--black2);
   color: #fff;
+}
+
+.adjust {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 40px;
+  padding-top: 80px;
+  background: var(--white);
+  color: var(--black);
+  display: inline-block;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h2 {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 50px;
+  height: 1px;
+  background: var(--black);
+}
+
+.about .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about .content .textBox {
+  width: 50%;
+  min-width: 50%;
+}
+
+.about .content .imgBx {
+  margin-left: 40px;
+}
+
+.about .content .imgBx img {
+  max-width: 100%;
 }

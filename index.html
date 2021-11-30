@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" type="text/css" href="styles.css">
-
+        <link rel="shortcut icon" type="image/jpg" href="#"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,7 +15,7 @@
     </head>
 
     <body>
-
+        <!-- Sidebar Navigation -->
         <div class="navigation">
             <ul>
                 <li>
@@ -26,13 +26,13 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#"><span class="lang-home"></span></a>
+                    <a href="#home"><span class="lang-home"></span></a>
                 </li>
                 <li>
-                    <a href="#"><span class="lang-about"></span></a>
+                    <a href="#about"><span class="lang-about"></span></a>
                 </li>
                 <li>
-                    <a href="#"><span class="lang-portfolio"></span></a>
+                    <a href="#"><span class="lang-projects"></span></a>
                 </li>
                 <li>
                     <a href="#"><span class="lang-contact"></span></a>
@@ -40,6 +40,7 @@
             </ul>
         </div>
         
+        <!-- Main -->
         <div class="main">
             <div class="topbar">
                 <a href="#" class="logo"><span class="lang-portfolio"></span></a>
@@ -48,12 +49,12 @@
                 </div>
             </div>
 
-            <!-- banner-->
-            <section class="banner" id="banner">
+            <!-- Home -->
+            <section class="home" id="home">
                 <div class="content">
-                    <!--div class="imgBx">
-                        <img src="me.jpg" alt="photo1">
-                    </div-->
+                    <div class="imgBx">
+                        <img src="home-me.jpg" alt="home-photo">
+                    </div>
                     <h3>Fabian Lanocci</h3>
                     <p><span class="lang-sub-heading"></span></p>
                     <a id="curriculum-link" href="#" class="btn" target="_blank"><span class="lang-download-CV-btn"></span></a>
@@ -65,23 +66,36 @@
                     </ul>
 
                 </div>
+            </section>
 
+            <!-- About me -->
+            <section class="about adjust" id="about">
+                <div class="title">
+                    <h2><span class="lang-about"></span></h2>
+                </div>
+                <div class="content">
+                    <div class="textBox">
+                        <p><span class="lang-about-description1"></span></p>
+                        <p><span class="lang-about-description2"></span></p>
+                        <h5><span class="lang-skills-heading"></span></h5>
+                    </div>
+                    <div class="imgBx">
+                        <img src="about-me.jpg" alt="aboutMe-photo">
+                    </div>
+                </div>
+            </section>
+
+            <section class="about adjust" id="about">
+                <div class="title">
+                    <h2><span class="lang-about"></span></h2>
+                    <div class="stack-wrapper">
+                        <i class="stack-icon"></i>
+                        <p class="stack-title"></p>
+                    </div>
+                </div>
             </section>
         </div>
 
         <script type="text/javascript" src="/app.js"></script>
-        <script>
-            let toggle = document.querySelector('.toggle');
-            let topbar = document.querySelector('.topbar');
-            let navigation = document.querySelector('.navigation');
-            let main = document.querySelector('.main');
-
-            toggle.onclick = function(){
-                toggle.classList.toggle('active');
-                topbar.classList.toggle('active');
-                navigation.classList.toggle('active');
-                main.classList.toggle('active');
-            }
-        </script>
     </body>
 </html>
