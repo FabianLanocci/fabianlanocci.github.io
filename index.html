@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c3b741a5e3.js" crossorigin="anonymous"></script>
 
-        <title>Fabian Lanocci</title>
+        <title>Fabian Lanocci - Portafolio</title>
     </head>
 
     <body>
@@ -20,7 +20,7 @@
             <ul>
                 <li>
                     <div class="select-button">
-                        <img src="" alt="language icon" class="language_icon" id="language_icon">
+                        <img src="" alt="language icon" class="language-icon" id="language_icon">
                         <select id="language_select" onchange="loadsLanguage(this.value)"></select>
                         <span class="arrow" id="arrow"></span>
                     </div>
@@ -47,6 +47,26 @@
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
             </div>
+
+            <!-- banner-->
+            <section class="banner" id="banner">
+                <div class="content">
+                    <!--div class="imgBx">
+                        <img src="me.jpg" alt="photo1">
+                    </div-->
+                    <h3>Fabian Lanocci</h3>
+                    <p><span class="lang-sub-heading"></span></p>
+                    <a id="curriculum-link" href="#" class="btn" target="_blank"><span class="lang-download-CV-btn"></span></a>
+                    <ul class="socialMedia">
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-free-code-camp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+                    </ul>
+
+                </div>
+
+            </section>
         </div>
 
         <script type="text/javascript" src="/app.js"></script>
@@ -54,220 +74,14 @@
             let toggle = document.querySelector('.toggle');
             let topbar = document.querySelector('.topbar');
             let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+
+            toggle.onclick = function(){
+                toggle.classList.toggle('active');
+                topbar.classList.toggle('active');
+                navigation.classList.toggle('active');
+                main.classList.toggle('active');
+            }
         </script>
-        <!-- Old Portfolio -->
-        <!-- Navbar >
-        <nav id="navbar">
-            <div class="hamburguer" id="hamburguer">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <div class="select-button">
-                <img src="" alt="language icon" class="language_icon" id="language_icon">
-                <select id="language_select" onchange="loadsLanguage(this.value)"></select>
-                <span class="arrow" id="arrow"></span>
-            </div>
-            <ul class="navbar-list" id="navbar-list">
-                <li class="navbar-list-link"><a href="#header" class="navlink" ><span class="lang-home"></span></a></li>
-                <li class="navbar-list-link"><a href="#aboutMe" class="navlink" ><span class="lang-about"></span></a></li>
-                <li class="navbar-list-link"><a href="#portfolio" class="navlink" ><span class="lang-portfolio"></span></a></li>
-                <li class="navbar-list-link"><a href="#contact" class="navlink" ><span class="lang-contact"></span></a></li>
-            </ul>
-        </nav>
-        <End of navbar >
-
-        < Header >
-        <header id ="header">
-            <video autoplay muted loop src="./res/video/background_video.mp4"></video>
-            <h1 id="header-heading">Fabian Lanocci</h1>
-            <h2 id="header-sub-heading"><span class="lang-sub-heading"></span></h2>
-        </header>
-        <End of header>
-        
-        <Main content>
-        <div class="main-wrapper">
-            <div class="main-content">
-                < About Me >
-                <div class="aboutMe" id="aboutMe">
-                    <h2 id="aboutMe-heading"><span class="lang-about"></span></h2>
-                    <p class="aboutMe-text"><span class="lang-about-description1"></span><br><span class="lang-about-description2"></span></p>
-                    <h3 id="stack-heading"><span class="lang-stack-heading"></span></h3>
-                    <div class="container-stack">
-                        <div class="stack"><img src="res/icons/html5.png" alt="HTML5" class="stack-icon"><p class="stack-title">HTML5</p></div>
-                        <div class="stack"><img src="res/icons/css-3.png" alt="CSS3" class="stack-icon"><p class="stack-title">CSS3</p></div>
-                        <div class="stack"><img src="res/icons/javascript.png" alt="Javascript" class="stack-icon"><p class="stack-title">Javascript</p></div>
-                        <div class="stack"><img src="res/icons/angular.png" alt="Angular" class="stack-icon"><p class="stack-title">Angular</p></div>
-                        <div class="stack"><img src="res/icons/visual-studio.png" alt="Visual Studio" class="stack-icon"><p class="stack-title">.Net</p></div>
-                        <div class="stack"><img src="res/icons/java.png" alt="Java" class="stack-icon"><p class="stack-title">Java</p></div>
-                        <div class="stack"><img src="res/icons/git.png" alt="Git" class="stack-icon"><p class="stack-title">Git/GitHub</p></div>
-                        <div class="stack"><img src="res/icons/mysql.png" alt="MySql" class="stack-icon"><p class="stack-title">MySql/SQL server</p></div>
-                        <div class="stack"><img src="res/icons/php.png" alt="PHP" class="stack-icon"><p class="stack-title">PHP</p></div>
-                        <div class="stack"><img src="res/icons/codeigniter.png" alt="CodeIgniter" class="stack-icon"><p class="stack-title">CodeIgniter</p></div>
-                    </div>
-                </div>
-                < End of about me >
-
-                < Portfolio >
-                
-                < CAMBIAR, idea de la gordita, hacer un slider con los proyectos y agregar ahora el de angular! >
-                <div class="portfolio" id="portfolio">
-                    <h2 id="portfolio-heading"><span class="lang-portfolio"></span></h2>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slide">
-                                    <img 
-                                        src="./res/thumbnails/proyecto_inssideMusic.png" 
-                                        alt="proyecto barberia" 
-                                        class="slide-img-top"
-                                    >
-                                    <div class="slide-body">
-                                        <h5 class="slide-title"><span class="lang-project1"></span></h5>
-                                        <p class="slide-text"><span class="lang-project1-desc"project-repository" : "See code",1-desc"></span></p>
-                                        <div class="slide-links">
-                                            <a href="https://github.com/FabianLanocci/insside-music" class="slide-repository-link" target="_blank"><span class="lang-project-repository"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide">
-                                    <img 
-                                        src="./res/thumbnails/proyecto_peluqueria.png" 
-                                        alt="proyecto barberia" 
-                                        class="slide-img-top"
-                                    >
-                                    <div class="slide-body">
-                                        <h5 class="slide-title"><span class="lang-project2"></span></h5>
-                                        <p class="slide-text"><span class="lang-project2-desc"></span></p>
-                                        <div class="slide-links">
-                                            <a href="./res/pages/ProyectoBarberia/index.html" class="slide-repository-link" target="_blank"><span class="lang-project-live"></span></a>
-                                            <a href="https://github.com/FabianLanocci/barber-shop" class="slide-repository-link" target="_blank"><span class="lang-project-repository"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide">
-                                    <img 
-                                        src="./res/thumbnails/proyecto_documentacion.png" 
-                                        alt="proyecto documentacion" 
-                                        class="slide-img-top"
-                                    >
-                                    <div class="slide-body">
-                                        <h5 class="slide-title"><span class="lang-project3"></span></h5>
-                                        <p class="slide-text"><span class="lang-project3-desc"></span></p>
-                                        <div class="slide-links">
-                                            <a href="https://xhylonus.000webhostapp.com/" class="slide-repository-link" target="_blank"><span class="lang-project-live"></span></a>
-                                            <a href="https://github.com/FabianLanocci/documentation-website-codeigniter" class="slide-repository-link" target="_blank"><span class="lang-project-repository"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide">
-                                    <img 
-                                        src="./res/thumbnails/proyecto_pacman.png" 
-                                        alt="proyecto pacman" 
-                                        class="slide-img-top"
-                                    >
-                                    <div class="slide-body">
-                                        <h5 class="slide-title"><span class="lang-project4"></span></h5>
-                                        <p class="slide-text"><span class="lang-project4-desc"></span></p>
-                                        <div class="slide-links">
-                                            <a href="https://github.com/FabianLanocci/java-pacman-game" class="slide-repository-link" target="_blank"><span class="lang-project-repository"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide">
-                                    <img 
-                                        src="./res/thumbnails/proyecto_webapi.png" 
-                                        alt="proyecto webapi" 
-                                        class="slide-img-top"
-                                    >
-                                    <div class="slide-body">
-                                        <h5 class="slide-title"><span class="lang-project5"></span></h5>
-                                        <p class="slide-text"><span class="lang-project5-desc"></span></p>
-                                        <div class="slide-links">
-                                            <a href="https://github.com/FabianLanocci/asp.net-web-api-shopping" class="slide-repository-link" target="_blank"><span class="lang-project-repository"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        < Add Pagination >
-                        <div class="swiper-pagination"></div>
-                        <Add Arrows >
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-                < Enf of portfolio >
-
-                < Contact >
-                <div class="contact" id="contact">
-                    <h2 id="contact-heading"><span class="lang-contact"></span></h2>
-                    <h3 id="contact-information"><span class="lang-contact-information"></span></h3>
-                    <div class="social-networks">
-                        <ul class="social-list">
-                            <li class="social-list-item"><a href="https://www.linkedin.com/in/fabian-lanocci/" class="fa fa-linkedin" target="_blank"></a></li>
-                            <li class="social-list-item"><a href="https://github.com/FabianLanocci" class="fa fa-github" target="_blank"></a></li>
-                            <li class="social-list-item"><a href="https://twitter.com/xhylonus" class="fa fa-twitter-square" target="_blank"></a></li>
-                            <li class="social-list-item"><a href="https://www.freecodecamp.org/fabianlanocci" class="fa fa-free-code-camp" target="_blank"></a></li>
-                            <li class="social-list-item"><a href="https://codepen.io/fabianlanocci/" class="fa fa-codepen" target="_blank"></a></li>
-                        </ul>
-                        <p class="social-item">Email:&nbsp<a href="mailto:fabianlanocci@gmail.com"> fabianlanocci@gmail.com</a></p>
-                        <p class="social-item"><span class="lang-phone"></span>: +54 (0223) 6699239</p>
-                    </div>
-                </div>
-                < End of contact >
-            </div>
-
-            <Footer >
-            <footer class="footer">
-                <a href="https://drive.google.com/file/d/1kDCtpYjLmOvEgqS2XnrrIUigqwFQO-b2/view?usp=sharing" id="curriculum-link" target="_blank"><i class="fas fa-file-download"></i> <span class="lang-curriculum"></span></a>
-                <span class="lang-copyright"></span>
-                <GO TO TOP>
-            </footer>
-            < End of footer>
-
-        </div>
-        < End of main content >
-
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        
-
-        <Functionality of the button scroll to top 
-        This piece of code is embedded because, apparently, the same piece of code inside the
-        the javascript file won't work. I have to check this out. For now it stays here so it
-        has its corresponding functionality.>
-        <button id="scrollToTop">
-            <i class="material-icons">arrow_upward</i>
-        </button>
-        <script>
-             const scrollToTop = document.getElementById("scrollToTop");
-
-            scrollToTop.addEventListener("click", function () {
-              $("html, body").animate({ scrollTop: 0 }, "slow");
-            });
-            
-            var swiper = new Swiper('.swiper-container', {
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-              effect: 'slide',
-              pagination: {
-                el: '.swiper-pagination'
-              },
-              mousewheel: false,
-              keyboard: false,
-            });
-        </script>
-        <End of functionality of the button scroll to top >
-        
     </body>
 </html>
