@@ -44,7 +44,7 @@ var LanguageList = {
     "download-CV-btn" : "Descarga mi CV",
     "about-description1" : "¡Hola! Soy estudiante de ultimo año en Instituto Argentino De La Empresa (IADE) - HILET, terminando Tecnicatura Superior en Sistemas (Analista de Sistemas).",
     "about-description2" : "He estado explorando/estudiando HTML, CSS, Javascript y algunos otros conceptos/lenguajes por mi mismo mientras terminaba la carrera y me di cuenta que me encanta el desarrollo en Front-end tanto como codear en .NET o Java asi que ahora estoy aqui para pegar el salto de la universidad a la industria de la tecnología.", 
-    "skills-heading" : "Conocimientos",
+    "skills-heading" : "Stack tecnológico",
     "project-repository" : "Código fuente",
     "project-live" : "Ver en vivo",
     "project1" : "Reproductor de música Spotify API",

@@ -255,13 +255,33 @@ body {
 
 .about .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 40px;
 }
 
 .about .content .textBox {
-  width: 50%;
-  min-width: 50%;
+  width: 49%;
+  min-width: 49%;
+}
+
+.stack-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stack-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-icon {
+  font-size: 100px;
+}
+
+.stack-icon-multiple {
+  font-size: 40px;
 }
 
 .about .content .imgBx {
@@ -269,5 +289,7 @@ body {
 }
 
 .about .content .imgBx img {
-  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  width: 100%;
 }
