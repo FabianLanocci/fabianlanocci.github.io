@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="shortcut icon" type="image/jpg" href="#"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--link rel="stylesheet" href="https://skillpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"-->
+        <!--link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
         <script src="https://kit.fontawesome.com/c3b741a5e3.js" crossorigin="anonymous"></script>
 
         <title>Fabian Lanocci - Portafolio</title>
@@ -32,7 +32,10 @@
                     <a href="#about"><span class="lang-about"></span></a>
                 </li>
                 <li>
-                    <a href="#"><span class="lang-projects"></span></a>
+                    <a href="#skills"><span class="lang-skills"></span></a>
+                </li>
+                <li>
+                    <a href="#projects"><span class="lang-projects"></span></a>
                 </li>
                 <li>
                     <a href="#"><span class="lang-contact"></span></a>
@@ -55,14 +58,14 @@
                     <div class="imgBx">
                         <img src="res/img/home-me.jpg" alt="home-photo">
                     </div>
-                    <h3>Fabian Lanocci</h3>
+                    <h1>Fabian Lanocci</h1>
                     <p><span class="lang-sub-heading"></span></p>
                     <a id="curriculum-link" href="#" class="btn" target="_blank"><span class="lang-download-CV-btn"></span></a>
                     <ul class="socialMedia">
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-free-code-camp"></i></a></li>
-                        <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+                        <li><a href="https://github.com/FabianLanocci" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/fabian-lanocci/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.freecodecamp.org/fabianlanocci" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+                        <li><a href="https://codepen.io/fabianlanocci/" target="_blank"><i class="fab fa-codepen"></i></a></li>
                     </ul>
 
                 </div>
@@ -77,61 +80,6 @@
                     <div class="textBox">
                         <p><span class="lang-about-description1"></span></p>
                         <p><span class="lang-about-description2"></span></p>
-                        <h5><span class="lang-skills-heading"></span></h5>
-                        <div class="stack-list">
-                            <div class="stack-wrapper">
-                                <i class="fab fa-html5 stack-icon"></i>
-                                <p class="stack-title">HTML</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <i class="fab fa-css3-alt stack-icon"></i>
-                                <p class="stack-title">CSS3</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <i class="fab fa-bootstrap stack-icon"></i>
-                                <p class="stack-title">Bootstrap</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <i class="fab fa-js-square stack-icon"></i>
-                                <p class="stack-title">Javascript / Typescript</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <i class="fab fa-angular stack-icon"></i>
-                                <p class="stack-title">Angular</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <i class="fab fa-java stack-icon"></i>
-                                <p class="stack-title">Java</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <div class="stack-icon-list">
-                                    <i class="fab fa-github stack-icon-multiple"></i>
-                                    <i class="fab fa-gitlab stack-icon-multiple"></i>
-                                </div>
-                                <p class="stack-title">Github/Gitlab</p>
-                            </div> 
-                            <div class="stack-wrapper">
-                                <div class="stack-icon-list">
-                                    <i class="fab fa-confluence stack-icon-multiple"></i>
-                                    <i class="fab fa-bitbucket stack-icon-multiple"></i>
-                                    <i class="fab fa-jira stack-icon-multiple"></i>
-                                </div>
-                                <p class="stack-title">Atlassian Suite</p>
-                                <p class="stack-subtitle">Jira/Confluence/Bitbucket</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <i class="fab fa-php stack-icon"></i>
-                                <p class="stack-title">PHP</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <i class="fas fa-database stack-icon"></i>
-                                <p class="stack-title">SQL Server / MySQL</p>
-                            </div>
-                            <div class="stack-wrapper">
-                                <i class="fas fa-mail-bulk stack-icon"></i>
-                                <p class="stack-title">Office Suite</p>
-                            </div>
-                        </div>
                     </div>
                     <div class="imgBx">
                         <img src="res/img/about-me.jpg" alt="aboutMe-photo">
@@ -139,11 +87,61 @@
                 </div>
             </section>
 
-            <!-- My projects -->
-            <section class="about adjust" id="about">
+            <!-- My Skills -->
+            <section class="skills adjust" id="skills">
                 <div class="title">
-                    <h2><span class="lang-projects"></span></h2>
+                    <h2><span class="lang-skills-heading"></span></h2>
+                    <p><span class="lang-skills-subtitle"></span></p>
                 </div>
+                <div class="content">
+                    <div class="skillBox">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h3 class="skill-title">HTML</h3>
+                    </div>
+                    <div class="skillBox">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h3 class="skill-title">CSS3</h3>
+                    </div>
+                    <div class="skillBox">
+                        <i class="fab fa-bootstrap skill-icon"></i>
+                        <h3 class="skill-title">Bootstrap</h3>
+                    </div>
+                    <div class="skillBox">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <h3 class="skill-title">Javascript / Typescript</h3>
+                    </div>
+                    <div class="skillBox">
+                        <i class="fab fa-angular skill-icon"></i>
+                        <h3 class="skill-title">Angular</h3>
+                    </div>
+                    <div class="skillBox">
+                        <i class="fab fa-java skill-icon"></i>
+                        <h3 class="skill-title">Java</h3>
+                    </div>
+                    <div class="skillBox">
+                        <div class="skill-icon-list">
+                            <i class="fab fa-github skill-icon-multiple"></i>
+                            <i class="fab fa-gitlab skill-icon-multiple"></i>
+                        </div>
+                        <h3 class="skill-title">Github/Gitlab</h3>
+                    </div>
+                    <div class="skillBox">
+                        <i class="fab fa-atlassian skill-icon"></i>
+                        <h3 class="skill-title">Atlassian Suite</h3>
+                        <h4 class="skill-subtitle">Jira/Confluence/Bitbucket</h4>
+                    </div>
+                    <div class="skillBox">
+                        <i class="fab fa-php skill-icon"></i>
+                        <h3 class="skill-title">PHP</h3>
+                    </div>
+                    <div class="skillBox">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h3 class="skill-title">SQL Server / MySQL</h3>
+                    </div>
+                    <div class="skillBox">
+                        <i class="far fa-file-alt skill-icon"></i>
+                        <h3 class="skill-title">Office Suite</h3>
+                    </div>
             </section>
         </div>
 

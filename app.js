@@ -9,14 +9,16 @@ var LanguageList = {
   //languages Objects
   var WORDS_EN = {
     "home" : "Home",
-    "about" : "About me",
+    "about": "About me",
+    "skills" : "Skills",
     "projects" : "My projects",
     "contact" : "Contact",
     "sub-heading" : "System analyst | Front-end developer",
     "download-CV-btn" : "Download my CV",
-    "about-description1" : "Hi! I'm a senior student at Instituto Argentino De La Empresa (IADE) - HILET, currently finishing Superior Technician in Systems (Systems Analyst). ",
-    "about-description2" : "I've been studying HTML, CSS, Javascript and a few other web development concepts/languages by myself as I'm finishing my career and realized I love Front-end developing as much as to code in .NET or Java and now am trying to make the jump from college to the tech industry.",
-    "skills-heading" : "Skills",
+    "about-description1" : "Hi! I'm a Front-end developer and senior student at Instituto Argentino De La Empresa (IADE) - HILET, currently finishing Superior Technician in Systems (Systems Analyst). ",
+    "about-description2" : "I've been studying HTML, CSS, Javascript and a few other web development concepts/languages by myself as I'm finishing my career and realized I love Front-end developing as much as to code in .NET or Java. Now, with several years of experience, I seek to set myself new challenges and get to know new environments, in order to continue growing and provide the best solutions together with my team.",
+    "skills-heading": "Skills",
+    "skills-subtitle": "This is the skills/technological stack that I have knowledge of. It includes both Front and Back technologies, databases and version control on various platforms, including the Atlassian suite. Management of the Office suite and Windows/Linux operating systems",
     "project-repository" : "Source code",
     "project-live" : "Live version",
     "project1" : "Spotify music listener",
@@ -32,19 +34,21 @@ var LanguageList = {
     "contact-information" : "If you're interested in chatting or have any questions I'd love for you to reach out!",
     "phone" : "Phone",
     "curriculum" : "Resume",
-    "copyright" : "Copyright \xa9 2021 - Fabian Lanocci"
+    "copyright" : "Copyright \xa9 2022 - Fabian Lanocci"
   };
   
   var WORDS_ES = {
     "home" : "Inicio",
-    "about" : "Sobre mi",
+    "about": "Sobre mi",
+    "skills" : "Habilidades",
     "projects" : "Mis proyectos",
     "contact" : "Contacto",
     "sub-heading" : "Analista de sistemas | Desarrollador Front-end",
     "download-CV-btn" : "Descarga mi CV",
-    "about-description1" : "¡Hola! Soy estudiante de ultimo año en Instituto Argentino De La Empresa (IADE) - HILET, terminando Tecnicatura Superior en Sistemas (Analista de Sistemas).",
-    "about-description2" : "He estado explorando/estudiando HTML, CSS, Javascript y algunos otros conceptos/lenguajes por mi mismo mientras terminaba la carrera y me di cuenta que me encanta el desarrollo en Front-end tanto como codear en .NET o Java asi que ahora estoy aqui para pegar el salto de la universidad a la industria de la tecnología.", 
-    "skills-heading" : "Stack tecnológico",
+    "about-description1": "¡Hola! Soy desarrollador front-end y estudiante de ultimo año en Instituto Argentino De La Empresa (IADE) - HILET, terminando Tecnicatura Superior en Sistemas (Analista de Sistemas).",
+    "about-description2" : "He estado estudiando HTML, CSS, Javascript y algunos otros conceptos/lenguajes por mi mismo mientras terminaba la carrera y me di cuenta que me encanta el desarrollo en Front-end tanto como codear en .NET o Java. Ahora, con varios años de experiencia, busco plantearme nuevos desafíos y conocer nuevos ambientes, con el fin de continuar creciendo y proveer las mejores soluciones junto a mi equipo.", 
+    "skills-heading": "Habilidades",
+    "skills-subtitle": "Este es el stack tecnológico del que poseo conocimientos. Comprende tecnologías tanto de Front como de Back, bases de datos y control de versionado en diversas plataformas, incluyendo también la suite de Atlassian. Manejo de la suite de Office y sistemas operativos Windows/Linux",
     "project-repository" : "Código fuente",
     "project-live" : "Ver en vivo",
     "project1" : "Reproductor de música Spotify API",
@@ -60,7 +64,7 @@ var LanguageList = {
     "contact-information" : "Si estás interesado/a en hacerme cualquier pregunta o simplemente charlar sobre algún proyecto, ¡me encantaría que te comunicaras conmigo!",
     "phone" : "Teléfono",
     "curriculum" : "Curriculum",
-    "copyright" : "Copyright \xa9 2021 - Fabian Lanocci"
+    "copyright" : "Copyright \xa9 2022 - Fabian Lanocci"
 
   };
   

@@ -260,28 +260,12 @@ body {
 }
 
 .about .content .textBox {
-  width: 49%;
-  min-width: 49%;
-}
-
-.stack-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.stack-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.stack-icon {
-  font-size: 100px;
-}
-
-.stack-icon-multiple {
-  font-size: 40px;
+  width: 49%;
+  min-width: 49%;
 }
 
 .about .content .imgBx {
@@ -292,4 +276,38 @@ body {
   height: auto;
   max-height: 80vh;
   width: 100%;
+}
+
+.skills .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 40px 0;
+}
+
+.skill-title {
+  margin: 10px 0 0 0;
+}
+
+.skill-subtitle {
+  font-size: 15px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.skill-icon {
+  font-size: 100px;
+}
+
+.skill-icon-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 100px;
+}
+
+.skill-icon-multiple {
+  font-size: 45px;
 }
