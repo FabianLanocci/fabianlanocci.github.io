@@ -1,9 +1,9 @@
-/* General styles ------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"); /* General styles ------*/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Poppings", sans-serif;
+  font-family: "Poppins", "Roboto", sans-serif;
 }
 :root {
   --black: #333;
@@ -151,6 +151,16 @@ body {
   justify-content: center;
 }
 
+.home .content h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.home .content p {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
 .home .imgBx {
   position: relative;
   width: 300px;
@@ -285,18 +295,37 @@ body {
   margin: 40px 0;
 }
 
-.skill-title {
-  margin: 10px 0 0 0;
+.skills .content .skillBox {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 50px 20px;
+  display: flex;
+  background: var(--white2);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills .content .skillBox .skill-icon {
+  font-size: 50px;
+}
+
+.skills .content .skillBox h3 {
+  font-size: 1.1em;
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+  color: var(--black);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.skills .content .skillBox p {
+  text-align: center;
 }
 
 .skill-subtitle {
   font-size: 15px;
   margin: 0;
   white-space: nowrap;
-}
-
-.skill-icon {
-  font-size: 100px;
 }
 
 .skill-icon-list {
