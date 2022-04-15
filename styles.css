@@ -11,6 +11,8 @@
   --grey: #777;
   --white: #fff;
   --white2: #fff;
+  --blue: #0032bb;
+  --darkBlue: #0f1629;
 }
 body {
   overflow-x: hidden;
@@ -231,6 +233,7 @@ body {
 
 .adjust {
   position: relative;
+  width: 100%;
   min-height: 100vh;
   padding: 0 40px;
   padding-top: 80px;
@@ -339,4 +342,88 @@ body {
 
 .skill-icon-multiple {
   font-size: 45px;
+}
+
+.projects .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 40px 0;
+}
+
+.projects .content .projectBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.projects .content .projectBx .imgBx {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+}
+
+.projects .content .projectBx:hover .imgBx {
+  visibility: hidden;
+  transform: translateY(-100%);
+}
+
+.projects .content .projectBx .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects .content .projectBx .textBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: 0.5s ease-in-out;
+}
+
+.projects .content .projectBx:hover .textBx {
+  transform: translateY(0);
+}
+
+.projects .content .projectBx .textBx h3 {
+  font-size: 1.25em;
+}
+
+.projects .content .projectBx .textBx h3,
+.projects .content .projectBx .textBx p {
+  color: #fff;
+}
+
+.projects .content .projectBx .textBx .bttn-container {
+margin-top: 1rem;
+}
+
+.projects .content .projectBx .textBx .bttn-container .project-button {
+  color: white;
+  background-color: var(--blue);
+  outline: none;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.projects .content .projectBx .textBx .bttn-container .project-button:hover {
+  background-color: var(--darkBlue);
 }
