@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: width 0.5s;
+  transition: width 0.5s, left 0.5s;
 }
 
 .navigation.active {
@@ -83,7 +83,7 @@ body {
   width: calc(100% - 300px);
   left: 300px;
   background: var(--white);
-  min-height: 100vh;
+  min-height: 100%;
   transition: width 0.5s, left 0.5s;
 }
 
@@ -426,4 +426,84 @@ margin-top: 1rem;
 
 .projects .content .projectBx .textBx .bttn-container .project-button:hover {
   background-color: var(--darkBlue);
+}
+
+.copyright {
+  position: relative;
+  bottom: 0;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width:992px){
+  .navigation {
+    left: -100%;
+    height: 100vh;
+  }
+  .navigation.active  {
+    left: 0;
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    left: 100%
+  }
+  .main .topbar {
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+  }
+  .navigation .ul {
+    padding: 20px 20px;
+  }
+  .banner .imgBx {
+    width: 250px;
+    height: 250px;
+  }
+  .banner h3,
+  .banner p {
+    text-align: center;
+  }
+  .adjust {
+    padding: 0 20px;
+    padding-top: 80px;
+  }
+  .about .content {
+    flex-direction: column;
+  }
+  .about .content .textBox {
+    width: 100%;
+    min-width: 100%;
+  }
+  .about .content .imgBx{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .about .content .imgBx img {
+    width: auto;
+  }
+  .projects .content,
+  .skills .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:767px){
+  .projects .content,
+  .skills .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .content .imgBx img {
+    width: 100%;
+  }
+  .contact {
+    margin-bottom: 100px;
+  }
+  .copyright {
+    padding: 10px 20px;
+  }
 }
