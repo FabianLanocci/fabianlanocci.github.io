@@ -436,14 +436,6 @@ margin-top: 1rem;
 }
 
 /* Contact --------------*/
-.contact-heading {
-  letter-spacing: 0.1rem;
-  font-weight: 800;
-  padding-bottom: 2rem;
-}
-.lang-contact-information {
-  font-weight: 300;
-}
 .social-networks {
   padding: 2.5rem;
 }
@@ -458,7 +450,7 @@ margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
-.fa {
+.social-list-item {
   padding: 20px 20px 20px 20px;
   font-size: 30px;
   width: 100px;
@@ -466,24 +458,24 @@ margin-top: 1rem;
   text-decoration: none;
   box-shadow: 10px 10px 9px #000000;
 }
-.fa:hover {
+.social-list-item:hover {
   opacity: 0.7;
   text-decoration: none;
   color: white;
 }
-.fa-linkedin {
+.social-linkedin {
   background: #0a66c2;
   color: white;
 }
-.fa-github {
+.social-github {
   background: #0d1117;
   color: white;
 }
-.fa-free-code-camp {
+.social-freecodecamp {
   background: #0a0a23;
   color: white;
 }
-.fa-codepen {
+.social-codepen {
   background: #131417;
   color: white;
 }
@@ -553,6 +545,14 @@ margin-top: 1rem;
   .projects .content,
   .skills .content {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .social-list {
+    flex-direction: column;
+    align-items: center ;  
+  }
+  .social-list-item {
+    margin: 0 0 2rem 0;
+    width: 60%;
   }
 }
 
