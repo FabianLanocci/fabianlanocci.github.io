@@ -14,6 +14,7 @@
   --blue: #0032bb;
   --darkBlue: #0f1629;
 }
+
 body {
   overflow-x: hidden;
 }
@@ -58,6 +59,7 @@ body {
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
   margin: 10px 0;
   display: flex;
   text-transform: uppercase;
@@ -458,6 +460,16 @@ margin-top: 1rem;
   text-decoration: none;
   box-shadow: 10px 10px 9px #000000;
 }
+.social-link {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.social-link:visited {
+  color: white;
+}
+
 .social-list-item:hover {
   opacity: 0.7;
   text-decoration: none;
@@ -465,19 +477,15 @@ margin-top: 1rem;
 }
 .social-linkedin {
   background: #0a66c2;
-  color: white;
 }
 .social-github {
   background: #0d1117;
-  color: white;
 }
 .social-freecodecamp {
   background: #0a0a23;
-  color: white;
 }
 .social-codepen {
   background: #131417;
-  color: white;
 }
 .lang-phone {
   white-space: nowrap;
